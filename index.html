@@ -46,6 +46,12 @@
       margin: auto;
     }
 
+    .section h2 {
+      color: #b889a1;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
     .products {
       display: flex;
       flex-wrap: wrap;
@@ -86,6 +92,17 @@
       font-size: 0.9em;
     }
 
+    .contact-link {
+      margin-top: 15px;
+      font-size: 1em;
+      color: #b889a1;
+    }
+
+    .contact-link a {
+      color: #b889a1;
+      text-decoration: underline;
+    }
+
     @media (max-width: 600px) {
       .products {
         flex-direction: column;
@@ -107,25 +124,57 @@
 
   <nav>
     <a href="#">Home</a>
-    <a href="#">Shop</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
+    <a href="#bracelets">Bracelets</a>
+    <a href="#necklace">Necklace</a>
+    <a href="#ring">Ring</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <div class="section">
-    <h2 style="text-align: center; color: #b889a1;">Featured Jewelry</h2>
+  <!-- Bracelets Section -->
+  <div class="section" id="bracelets">
+    <h2>Bracelets</h2>
     <div class="products">
       <div class="product">
         <img src="IMG_7109.jpeg" alt="Bracelet Set">
         <h3>Ocean Vibe Bracelets</h3>
-        <p>Playful and beachy. Made with pastel polymer beads in ocean tones.</p>
-      </div>
-      <div class="product">
-        <img src="IMG_7110.jpeg" alt="Pearl Necklace">
-        <h3>Elegant Pearl Choker</h3>
-        <p>Delicate lavender beads with pearls and gold accents. Classy and cute.</p>
+        <p>Playful stackable bracelets in calming beach tones. Made with soft, lightweight beads.</p>
       </div>
     </div>
+  </div>
+
+  <!-- Necklace Section -->
+  <div class="section" id="necklace">
+    <h2>Necklace</h2>
+    <div class="products">
+      <div class="product">
+        <img src="IMG_7110.jpeg" alt="Shell Necklace">
+        <h3>Shell Pearl Necklace</h3>
+        <p>Elegant lilac clay beads with pearl and gold accents. A delicate beach-inspired choker.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ring Section -->
+  <div class="section" id="ring">
+    <h2>Ring</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://via.placeholder.com/280x280?text=Coming+Soon" alt="Ring Placeholder">
+        <h3>Golden Starfish Ring</h3>
+        <p>Minimal and coastal. Gold-tone ring inspired by ocean treasures. (Coming soon!)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align: center;">You can DM us on Instagram:</p>
+    <p class="contact-link" style="text-align: center;">
+      <a href="https://mozailee-sparkle-shop-dream.lovable.app/" target="_blank">
+        @mozailee-sparkle-shop
+      </a>
+    </p>
   </div>
 
   <footer>
@@ -135,4 +184,3 @@
 
 </body>
 </html>
-
